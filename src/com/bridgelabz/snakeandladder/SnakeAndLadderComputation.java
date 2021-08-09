@@ -9,7 +9,7 @@ public class SnakeAndLadderComputation
 		System.out.println("Welcome To Snake and Ladder");
 		
 		String player1 = "Raj";
-		int position = 0, start_position = 0, max_position = 100;
+		int position = 0, start_position = 0, max_position = 100,count=0;
 		
 		
 		System.out.println();
@@ -23,6 +23,7 @@ public class SnakeAndLadderComputation
 		while (position >= 0 && position <100) {					//UC4
 			int dice = random.nextInt(6)+1; 
 			int option = random.nextInt(3);
+			count++;												//UC6
 						
 			System.out.println("Dice rolled : " +dice ); 
 			
@@ -61,10 +62,12 @@ public class SnakeAndLadderComputation
 					break;	
 				
 			}
+			
 			System.out.println("Position : " +position); //UC3
 			
 			if (position == 100 )
-				System.out.println(player1 + " Won");    //UC5
+				System.out.println(player1 + " Won in " +count + " Dice Count");    //UC5 & UC6
+																					
 		
 			
 		}
