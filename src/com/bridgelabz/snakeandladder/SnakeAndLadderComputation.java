@@ -18,14 +18,55 @@ public class SnakeAndLadderComputation
 		System.out.println("End Position : " +max_position);			//UC1
 		System.out.println("Player Position : " +position);             //UC1
 		
+		Random random = new Random();
+		
+		while (position >= 0 && position <100) {
+			int dice = random.nextInt(6)+1; 
+			int option = random.nextInt(3);
+						
+			System.out.println("Dice rolled : " +dice ); 
+			
+			switch(option)
+			{
+				case 0:
+					System.out.println("Option : " +option);
+					System.out.println("NoPlay");
+					
+					break;
+				case 1:
+					System.out.println("Option : " +option);
+					System.out.println("Ladder"); 
+					if (position + dice > 100)
+					{ 
+						position=position;
+						
+					}else
+					{
+						position += dice;
+						
+					}
+					break;	
+				case 2:
+					System.out.println("Option : " +option);
+					System.out.println("Snake");
+					if( position - dice < 0)
+					{
+						position = 0;
+						
+					}else
+					{
+						position -= dice;
+						
+					}
+					break;	
+				
+			}
+			System.out.println("Position : " +position);
+		
+			
+		}
 		
 
-		Random random = new Random();
-		int dice = random.nextInt(7); 
-		System.out.println("Dice rolled : " +dice );             		//UC2
-		
-		
-		
 
 	}
 	
