@@ -20,7 +20,7 @@ public class SnakeAndLadderComputation
 		
 		Random random = new Random();
 		
-		while (position >= 0 && position <100) {
+		while (position >= 0 && position <100) {					//UC4
 			int dice = random.nextInt(6)+1; 
 			int option = random.nextInt(3);
 						
@@ -63,8 +63,7 @@ public class SnakeAndLadderComputation
 			}
 			System.out.println("Position : " +position); //UC3
 			
-			if (position == 100 )
-				System.out.println(player1 + " Won");    //UC4
+			
 		
 			
 		}
