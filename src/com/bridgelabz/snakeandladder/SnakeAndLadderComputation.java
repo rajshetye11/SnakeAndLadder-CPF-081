@@ -61,7 +61,7 @@ public class SnakeAndLadderComputation
 					break;	
 				
 			}
-			System.out.println("Position : " +position);
+			System.out.println("Position : " +position); //UC3
 		
 			
 		}
