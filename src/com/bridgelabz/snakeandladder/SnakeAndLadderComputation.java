@@ -63,7 +63,8 @@ public class SnakeAndLadderComputation
 			}
 			System.out.println("Position : " +position); //UC3
 			
-			
+			if (position == 100 )
+				System.out.println(player1 + " Won");    //UC5
 		
 			
 		}
