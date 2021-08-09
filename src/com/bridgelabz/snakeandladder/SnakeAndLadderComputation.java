@@ -19,6 +19,11 @@ public class SnakeAndLadderComputation
 		System.out.println("Player Position : " +position);             //UC1
 		
 		
+
+		Random random = new Random();
+		int dice = random.nextInt(7); 
+		System.out.println("Dice rolled : " +dice );             		//UC2
+		
 		
 		
 
