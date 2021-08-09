@@ -66,9 +66,10 @@ public class SnakeAndLadderComputation
 			System.out.println("Position : " +position); //UC3
 			
 			if (position == 100 )
+			{
 				System.out.println(player1 + " Won in " +count + " Dice Count");    //UC5 & UC6
-																					
-		
+				System.out.println("Number of times Dice played : " +count);		//UC6															
+			}
 			
 		}
 		
